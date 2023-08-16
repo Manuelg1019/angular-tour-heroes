@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { hero } from '../hero';
+import { HEROES } from '../mock-heroes';
 
 @Component({
   selector: 'app-heroes',
@@ -7,6 +9,16 @@ import { Component } from '@angular/core';
 })
 export class HeroesComponent {
   
-  hero ="windstorm";
+  heroes = HEROES;
+  selectedHero?: hero;
 
+  onSelect(hero: hero): void {
+  if (this.selectedHero === hero){
+   this.selectedHero=undefined;
+  }
+  else {
+    this.selectedHero=hero;
 }
+};
+}
+
