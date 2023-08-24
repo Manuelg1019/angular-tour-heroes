@@ -9,7 +9,12 @@
     </div>
   
   </div>
+    <div><span>habilidad: </span>{{Hero?.habilidad}}</div> <br>
+     <div><span>pais:  </span>{{Hero?.pais}}</div> <br>
+      <div><span>edad:  </span>{{Hero?.edad}}</div> <br>
+       <div><span>familia de heroes: </span>{{Hero?.grupoDeHeroes}}</div> <br>
 
   <ng-template #nohero>
-    <h2>no hay heroe seleccionado</h2>
+    <h2>Este heroe no existe</h2>
   </ng-template>
+  <button (click)="goBack()">go back</button>

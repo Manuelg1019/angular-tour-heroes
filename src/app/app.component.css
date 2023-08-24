@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+/* AppComponent's private CSS styles */
+h1 {
+    font-size: 1.2em;
+    margin-bottom: 0;
+  }
+  h2 {
+    font-size: 2em;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  button {
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 4px;
+  }
+  button:visited, button:link {
+    color: #334953;
+  }
+  button:hover {
+    color: #039be5;
+    background-color: #cfd8dc;
+  }
+  button.active {
+    color: #039be5;
+  }
