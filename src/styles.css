@@ -41,3 +41,8 @@ button:disabled{
 *{
     font-family: 'Times New Roman', Times, serif;
 }
+
+.card{
+    background-color: rgb(92, 142, 142);
+    color: #000000;
+}

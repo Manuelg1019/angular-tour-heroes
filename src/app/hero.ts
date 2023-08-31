@@ -5,5 +5,6 @@ export interface hero {
     pais: string;
     edad: string;
     grupoDeHeroes: string;
+    imagen: string;
     
 }

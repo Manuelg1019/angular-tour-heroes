@@ -3,16 +3,22 @@
     <h2>{{Hero.name | uppercase}} Details</h2>
     <div><span>id: </span>{{Hero.id}}</div>
     <div>
-      <label>name:
-        <input [(ngModel)]="Hero.name" placeholder="name"/>
-      </label>
+      
+      <div class="card" style="width: 18rem;">
+      <img src={{Hero.imagen}} class="card-img-top" alt="..."> 
+      <h5 class="card-title">{{Hero.name}}</h5>
+     <div class="card-body">
+        <label>name:
+          <input [(ngModel)]="Hero.name" placeholder="name"/>
+        </label>
+      </div>
+        <div><span>habilidad: </span>{{Hero.habilidad}}</div> <br>
+        <div><span>pais:  </span>{{Hero.pais}}</div> <br>
+        <div><span>edad:  </span>{{Hero.edad}}</div> <br>
+         <div><span>familia de heroes: </span>{{Hero.grupoDeHeroes}}</div> <br>
+      </div>
     </div>
-  
   </div>
-    <div><span>habilidad: </span>{{Hero?.habilidad}}</div> <br>
-     <div><span>pais:  </span>{{Hero?.pais}}</div> <br>
-      <div><span>edad:  </span>{{Hero?.edad}}</div> <br>
-       <div><span>familia de heroes: </span>{{Hero?.grupoDeHeroes}}</div> <br>
 
   <ng-template #nohero>
     <h2>Este heroe no existe</h2>

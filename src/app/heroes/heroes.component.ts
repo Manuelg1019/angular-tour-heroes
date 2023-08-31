@@ -12,9 +12,9 @@ import { MessageService } from '../message.service';
 export class HeroesComponent implements OnInit{
   
   heroes: hero[];
-  
+  Hero?:  hero;
 
-  constructor(private HeroService: HeroService, private messageService: MessageService) {
+  constructor(private HeroService: HeroService, private messageService: MessageService,) {
     this.heroes=[];
   }
 
